@@ -11,43 +11,41 @@
       <h1 class="visually-hidden">Магазин вязаных товаров для дома</h1>
       <nav class="main-nav">
         <div class="page-header__top-wrapper">
-          <img class="page-header__logo" src="https://via.placeholder.com/86x35" alt="Мишка логотип">
+          <a><img class="page-header__logo" src="https://via.placeholder.com/86x35" alt="Мишка логотип"></a>
           <button class="main-nav__menu-toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </div>
-        <ul class="main-nav__list site-list">
-          <li class="main-nav__list-item site-list__item">
-            <a class="main-nav__item-link site-list__item-link" href="#">
+        <ul class="site-list">
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="#">
               <span class="main-nav__item-text">Каталог товаров</span>
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item">
-            <a class="main-nav__item-link site-list__item-link" href="#">
+          <li class="site-list__item">
+            <a class="site-list__item-link" href="#">
               <span class="main-nav__item-text">Вязание на заказ</span>
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item site-list__item--desktop">
-            <a class="main-nav__item-link site-list__item-link" href="#">
+          <li class="site-list__item site-list__item--desktop">
+            <a class="site-list__item-link" href="#">
               <span class="main-nav__item-text">Новые поступления</span>
             </a>
           </li>
-          <li class="main-nav__list-item site-list__item site-list__item--desktop">
-            <a class="main-nav__item-link site-list__item-link" href="#">
+          <li class="site-list__item site-list__item--desktop">
+            <a class="site-list__item-link" href="#">
               <span class="main-nav__item-text">Распродажа</span>
             </a>
           </li>
         </ul>
-        <ul class="main-nav__list user-list">
-          <li class="main-nav__list-item user-list__item">
-            <a class="main-nav__item-link" href="#">
-              <img class="main-nav__item-icon" src="https://via.placeholder.com/18x18" alt="Иконка">
-              <span class="main-nav__item-text user-list__search">Поиск по сайту</span>
+        <ul class="user-list">
+          <li class="user-list__item">
+            <a class="user-list__item-link user-list__item-link--search" href="#">
+              <span class="main-nav__item-text main-nav__item-text--hidden">Поиск по сайту</span>
             </a>
           </li>
-          <li class="main-nav__list-item user-list__item">
-            <a class="main-nav__item-link" href="#">
-              <img class="main-nav__item-icon" src="https://via.placeholder.com/18x18" alt="Иконка">
+          <li class="user-list__item">
+            <a class="user-list__item-link user-list__item-link--basket" href="#">
               <span class="main-nav__item-text">Корзина: пока пуста</span>
             </a>
           </li>
@@ -58,95 +56,64 @@
       <main class="page-main">
         <div class="page-main__wrapper">
           <section class="feature">
-            <header class="feature__title-wrapper">
+            <header class="feature__header">
               <h2 class="feature__title">Милые штуки ручной<br> работы для дома</h2>
-              <img class="feature__image" src="https://via.placeholder.com/320x282" alt="Милые штуки ручной работы для дома">
             </header>
             <ul class="feature__list">
               <li class="feature__list-item">
                 <a class="feature__link" href="http://www.htmlacademy.ru/">
-                  <div class="feature__item-wrapper">
-                    <p class="feature__item-text">Предметы интерьера</p>
-                  </div>
+                  <p class="feature__item-text">Предметы интерьера</p>
                 </a>
               </li>
               <li class="feature__list-item">
                 <a class="feature__link" href="http://www.htmlacademy.ru/">
-                  <div class="feature__item-wrapper">
-                    <p class="feature__item-text">Детские игрушки</p>
-                  </div>
+                  <p class="feature__item-text">Детские игрушки</p>
                 </a>
               </li>
             </ul>
           </section>
           <section class="offer">
             <div class="offer__wrapper">
-              <div class="offer__title-wrapper">
-                <h2 class="offer__mark">Товар недели</h2>
-                <h3 class="offer__title">Вязаные корзинки</h3>
+              <div class="offer__header">
+                <b class="offer__mark">Товар недели</b>
+                <h2 class="offer__title">Вязаные корзинки</h2>
               </div>
               <p class="offer__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
-              <table class="offer__table">
-                <caption class="visually-hidden">Описание товара</caption>
-                <tbody>
-                  <tr>
-                    <th>Цвет:</th>
-                    <td>Тиффани/серый</td>
-                  </tr>
-                  <tr>
-                    <th>Диаметр:</th>
-                    <td>25 см</td>
-                  </tr>
-                  <tr>
-                    <th>Высота:</th>
-                    <td>15 см</td>
-                  </tr>
-                </tbody>
-              </table>
+              <dl class="offer__table">
+                <span class="visually-hidden">Описание товара</span>
+                <dt>Цвет:</dt>
+                <dd>Тиффани/серый</dd>
+                <dt>Диаметр:</dt>
+                <dd>25 см</dd>
+                <dt>Высота:</dt>
+                <dd>15 см</dd>
+              </dl>
               <img class="offer__image" src="https://via.placeholder.com/260x315" alt="Вязанные корзинки">
               <p class="offer__price">Цена: 990 руб.</p>
-              <button class="offer__button button">Заказать</button>
+              <a class="offer__button button" href="#">Заказать</a>
             </div>
           </section>
           <section class="about">
             <div class="about__wrapper">
               <h2 class="about__title">Коротко о нас:</h2>
               <ul class="about__benefits-list">
-                <li>
-                  <div class="about__benefit-item">
-                    <img class="about__benefit-item-image" src="https://via.placeholder.com/50x35" alt="Icon">
-                    <span class="about__benefit-item-text">Экологически<br> чистые материалы</span>
-                  </div>
+                <li class="about__benefit-item">
+                  <span class="about__benefit-item-text">Экологически<br> чистые материалы</span>
                 </li>
-                <li>
-                  <div class="about__benefit-item about__benefit-item--money">
-                    <img class="about__benefit-item-image" src="https://via.placeholder.com/50x35" alt="Icon">
-                    <span class="about__benefit-item-text">Скандинавский стиль<br> по российской цене</span>
-                  </div>
+                <li class="about__benefit-item about__benefit-item--money">
+                  <span class="about__benefit-item-text">Скандинавский стиль<br> по российской цене</span>
                 </li>
-                <li>
-                  <div class="about__benefit-item about__benefit-item--likes">
-                    <img class="about__benefit-item-image" src="https://via.placeholder.com/50x35" alt="Icon">
-                    <span class="about__benefit-item-text">Увеличивает лайки<br> на фотографиях</span>
-                  </div>
+                <li class="about__benefit-item about__benefit-item--likes">
+                  <span class="about__benefit-item-text">Увеличивает лайки<br> на фотографиях</span>
                 </li>
-                <li>
-                  <div class="about__benefit-item about__benefit-item--knitting">
-                    <img class="about__benefit-item-image" src="https://via.placeholder.com/50x35" alt="Icon">
-                    <span class="about__benefit-item-text">Связано вручную<br> с любовью и умилением</span>
-                  </div>
+                <li class="about__benefit-item about__benefit-item--knitting">
+                  <span class="about__benefit-item-text">Связано вручную<br> с любовью и умилением</span>
                 </li>
-                <li>
-                  <div class="about__benefit-item about__benefit-item--locals">
-                    <img class="about__benefit-item-image" src="https://via.placeholder.com/50x35" alt="Icon">
-                    <span class="about__benefit-item-text">Поддержка отечественного производителя</span>
-                  </div>
+                <li class="about__benefit-item about__benefit-item--locals">
+                  <span class="about__benefit-item-text">Поддержка отечественного производителя</span>
                 </li>
-                <li>
-                  <div class="about__benefit-item about__benefit-item--gift">
-                    <img class="about__benefit-item-image" src="https://via.placeholder.com/50x35" alt="Icon">
-                    <span class="about__benefit-item-text">Поставляется<br> в подарочной упаковке</span>
-                  </div>
+                <li class="about__benefit-item about__benefit-item--gift">
+                  <span class="about__benefit-item-text">Поставляется<br> в подарочной упаковке</span>
                 </li>
               </ul>
             </div>
@@ -214,25 +181,27 @@
             </div>
           </section>
           <section class="contacts">
-            <div class="contacts__wrapper">
-              <h2 class="contacts__title">Контакты</h2>
-              <p class="contacts__text">
+            <dl class="contacts__wrapper">
+              <dt class="contacts__title">Контакты</dt>
+              <dd class="contacts__text">
                 e-mail:
                 <a class="contacts__text contacts__text--email" href="mailto:info@mimimishkashop.ru">info@mimimishkashop.ru</a>
-              </p>
-              <p class="contacts__text">
+              </dd>
+              <dd class="contacts__text">
                 адрес:
                 <span class="contacts__text contacts__text--address">г.Санкт-Петербург<br> ул. Большая Конюшенная д.19/8, офис 101</span>
-              </p>
-            </div>
+              </dd>
+            </dl>
             <img class="contacts__map" src="https://via.placeholder.com/320x454" alt="г.Санкт-Петербург, ул. Большая Конюшенная, д.19/8, офис 101">
-            <a class="contacts__write-us-button button" href="http://www.htmlacademy.ru/">Напишите нам</a>
+            <a class="contacts__link button" href="http://www.htmlacademy.ru/">Напишите нам</a>
           </section>
         </div>
       </main>
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <img class="page-footer__logo" src="https://via.placeholder.com/102x34" alt="Логотип Мишка">
+        <a>
+          <img class="page-footer__logo" src="https://via.placeholder.com/102x34" alt="Логотип Мишка">
+        </a>
         <section class="page-footer__social social">
           <h2 class="visually-hidden">Мы в соц-сетях</h2>
           <ul class="social__list">
@@ -258,7 +227,7 @@
         </section>
         <section class="page-footer__copyright studio">
           <h2 class="studio__title">Разработано</h2>
-          <a class="studio__link" href="http://www.htmlacademy.ru/"><img class="studio__image" src="https://via.placeholder.com/27x34" alt="Ссылка на сайт htmlacademy.ru"></a>
+          <a class="studio__link" href="https://htmlacademy.ru/intensive/adaptive"><img class="studio__image" src="https://via.placeholder.com/27x34" alt="Ссылка на сайт htmlacademy.ru"></a>
         </section>
       </div>
     </footer>
